@@ -3,7 +3,7 @@ import collections
 filename = input('Input filename :')
 with open(filename) as info:
     str = info.read()
-    biaodian = str.replace(',',' ').replace('.',' ').replace('!',' ').replace('?',' ')
+    biaodian = str.lower().replace(',',' ').replace('.',' ').replace('!',' ').replace('?',' ')
     print(biaodian)
     str2 = biaodian.split(' ')
 
